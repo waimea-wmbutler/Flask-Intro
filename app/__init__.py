@@ -23,7 +23,12 @@ def random():
 @app.get("/number/<int:num>")
 def analyseNumber(num):
     print(f"You Entered: {num} ")
-    return redirect("/")
+    return render_template ('pages/number.jinja', number=num)
+
+@app.get("/form/")
+@app.get("/form")
+def form():
+    return render_template ('pages/form.jinja')
 
 @app.errorhandler(404)
 def notFound(e):
