@@ -1,7 +1,7 @@
 {% extends 'pages/base.jinja' %}
 
 {% block title %}
-    Flask Demo - Forms
+    Vietnam - Enlist
 {% endblock %}
 
 
@@ -19,7 +19,7 @@
                 <input
                     name="name"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="John Doe"
                     required
                 >
             </label>
@@ -29,9 +29,18 @@
                 <input
                     name="Age"
                     type="number"
-                    placeholder="Your Age"
+                    placeholder="18"
                     min="18"
                     max="50"
+                    required
+                >
+            </label>
+            <label>
+                Your Specialty
+                <input
+                    name="Specialty"
+                    type="choice"
+                    placeholder="Infantry - Riflemen"
                     required
                 >
             </label>
